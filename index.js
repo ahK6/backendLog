@@ -13,7 +13,7 @@ const session = require("express-session");
 const cors = require("cors");
 //conectarse a mongoose
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://127.0.0.1:27017/testapi", {
+mongoose.connect("mongodb://localhost:27017/testapi", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

@@ -45,8 +45,7 @@ app.use(
   })
 );
 
-corsOptions = { origin: "http://165.227.123.15:3000", credentials: true };
-app.use(cors(corsOptions));
+app.use(cors());
 //router
 
 app.use("/", require("./routes/usersRoute"));

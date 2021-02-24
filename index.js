@@ -45,7 +45,7 @@ app.use(
   })
 );
 
-corsOptions = { origin: "http://localhost:3000", credentials: true };
+corsOptions = { origin: "http://165.227.123.15:3000", credentials: true };
 app.use(cors(corsOptions));
 //router
 

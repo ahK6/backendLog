@@ -20,7 +20,6 @@ exports.newUser = async (req, res, next) => {
 
     if (error.code == 11000) {
       res.status(409).send({ mensaje: "El correo electronico ya está en uso" });
-      next();
     } else {
       res.json({
         mensaje:
